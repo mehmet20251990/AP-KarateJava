@@ -1,0 +1,12 @@
+<testsuite failures="0" name="src/test/java/features/APITest.feature" skipped="0" tests="1" time="1.930788">
+  <testcase classname="src.test.java.features.APITest" name="API 3 GET" time="1.930788">
+    <system-out>* url 'https://automationexercise.com/api' ................................ passed
+Given path '/brandsList' .................................................. passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* def jsResponse = response.brands ........................................ passed
+* def brandcount = jsResponse.length ...................................... passed
+* print brandcount ........................................................ passed
+* match brandcount == 34 .................................................. passed</system-out>
+  </testcase>
+</testsuite>

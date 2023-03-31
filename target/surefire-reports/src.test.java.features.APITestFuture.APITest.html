@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.features.APITestFuture.APITest</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2023-03-31 11:05:54 &Ouml;S</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:4]">[1:4] API GET </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/features/APITestFuture/APITest.feature</span><span class="feature-description">API Test</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:4]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">API GET </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 2122</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:4]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:4]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'https://automationexercise.com/api'</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">23:05:51.893 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">Given path '/productsList'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">When method Get</div>
+                        </div>
+                        <div class="time-cell passed">1998</div>
+                    </div>
+                    <div class="preformatted" data-parent="3">23:05:52.626 request:
+1 &gt; GET https://automationexercise.com/api/productsList
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: automationexercise.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.15)
+
+23:05:53.881 response time in milliseconds: 1246,63
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 7b0b35afbea12347-IST
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Date: Fri, 31 Mar 2023 20:05:54 GMT
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CS%2Fq1T9IRgKyaqEmeA8sutdxr2g%2FerXTACvr8tiJMTv8A9m75Ni5KchDTHfx7wevH%2F8TfYSuc2vry8n47zN7crgYbTL7tl4gTsDgVHPqfUECtojM15T%2FbbIQeyAWfi6ligU145wW1MlR"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; allow: POST, DELETE, OPTIONS, GET, PUT
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+1 &lt; referrer-policy: same-origin
+1 &lt; status: 200 OK
+1 &lt; vary: Accept,Cookie,Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-powered-by: Phusion Passenger 6.0.7
+{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment">#    * print response</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">And karate.log(response)</div>
+                        </div>
+                        <div class="time-cell passed">110</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">23:05:54.038 {
+  "responseCode": 200,
+  "products": [
+    {
+      "price": "Rs. 500",
+      "name": "Blue Top",
+      "id": 1,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Tops"
+      },
+      "brand": "Polo"
+    },
+    {
+      "price": "Rs. 400",
+      "name": "Men Tshirt",
+      "id": 2,
+      "category": {
+        "usertype": {
+          "usertype": "Men"
+        },
+        "category": "Tshirts"
+      },
+      "brand": "H&amp;M"
+    },
+    {
+      "price": "Rs. 1000",
+      "name": "Sleeveless Dress",
+      "id": 3,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Dress"
+      },
+      "brand": "Madame"
+    },
+    {
+      "price": "Rs. 1500",
+      "name": "Stylish Dress",
+      "id": 4,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Dress"
+      },
+      "brand": "Madame"
+    },
+    {
+      "price": "Rs. 600",
+      "name": "Winter Top",
+      "id": 5,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Tops"
+      },
+      "brand": "Mast &amp; Harbour"
+    },
+    {
+      "price": "Rs. 400",
+      "name": "Summer White Top",
+      "id": 6,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Tops"
+      },
+      "brand": "H&amp;M"
+    },
+    {
+      "price": "Rs. 1000",
+      "name": "Madame Top For Women",
+      "id": 7,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Tops"
+      },
+      "brand": "Madame"
+    },
+    {
+      "price": "Rs. 700",
+      "name": "Fancy Green Top",
+      "id": 8,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Tops"
+      },
+      "brand": "Polo"
+    },
+    {
+      "price": "Rs. 499",
+      "name": "Sleeves Printed Top - White",
+      "id": 11,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Tops &amp; Shirts"
+      },
+      "brand": "Babyhug"
+    },
+    {
+      "price": "Rs. 359",
+      "name": "Half Sleeves Top Schiffli Detailing - Pink",
+      "id": 12,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Tops &amp; Shirts"
+      },
+      "brand": "Babyhug"
+    },
+    {
+      "price": "Rs. 278",
+      "name": "Frozen Tops For Kids",
+      "id": 13,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Tops &amp; Shirts"
+      },
+      "brand": "Allen Solly Junior"
+    },
+    {
+      "price": "Rs. 679",
+      "name": "Full Sleeves Top Cherry - Pink",
+      "id": 14,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Tops &amp; Shirts"
+      },
+      "brand": "Kookie Kids"
+    },
+    {
+      "price": "Rs. 315",
+      "name": "Printed Off Shoulder Top - White",
+      "id": 15,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Tops &amp; Shirts"
+      },
+      "brand": "Babyhug"
+    },
+    {
+      "price": "Rs. 478",
+      "name": "Sleeves Top and Short - Blue &amp; Pink",
+      "id": 16,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Dress"
+      },
+      "brand": "Babyhug"
+    },
+    {
+      "price": "Rs. 1200",
+      "name": "Little Girls Mr. Panda Shirt",
+      "id": 18,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Tops &amp; Shirts"
+      },
+      "brand": "Kookie Kids"
+    },
+    {
+      "price": "Rs. 1050",
+      "name": "Sleeveless Unicorn Patch Gown - Pink",
+      "id": 19,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Dress"
+      },
+      "brand": "Allen Solly Junior"
+    },
+    {
+      "price": "Rs. 1190",
+      "name": "Cotton Mull Embroidered Dress",
+      "id": 20,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Dress"
+      },
+      "brand": "Kookie Kids"
+    },
+    {
+      "price": "Rs. 1530",
+      "name": "Blue Cotton Indie Mickey Dress",
+      "id": 21,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Dress"
+      },
+      "brand": "Biba"
+    },
+    {
+      "price": "Rs. 1600",
+      "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink",
+      "id": 22,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Dress"
+      },
+      "brand": "Biba"
+    },
+    {
+      "price": "Rs. 1100",
+      "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi",
+      "id": 23,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Dress"
+      },
+      "brand": "Biba"
+    },
+    {
+      "price": "Rs. 849",
+      "name": "Colour Blocked Shirt \u2013 Sky Blue",
+      "id": 24,
+      "category": {
+        "usertype": {
+          "usertype": "Kids"
+        },
+        "category": "Tops &amp; Shirts"
+      },
+      "brand": "Allen Solly Junior"
+    },
+    {
+      "price": "Rs. 1299",
+      "name": "Pure Cotton V-Neck T-Shirt",
+      "id": 28,
+      "category": {
+        "usertype": {
+          "usertype": "Men"
+        },
+        "category": "Tshirts"
+      },
+      "brand": "H&amp;M"
+    },
+    {
+      "price": "Rs. 1000",
+      "name": "Green Side Placket Detail T-Shirt",
+      "id": 29,
+      "category": {
+        "usertype": {
+          "usertype": "Men"
+        },
+        "category": "Tshirts"
+      },
+      "brand": "Polo"
+    },
+    {
+      "price": "Rs. 1500",
+      "name": "Premium Polo T-Shirts",
+      "id": 30,
+      "category": {
+        "usertype": {
+          "usertype": "Men"
+        },
+        "category": "Tshirts"
+      },
+      "brand": "Polo"
+    },
+    {
+      "price": "Rs. 850",
+      "name": "Pure Cotton Neon Green Tshirt",
+      "id": 31,
+      "category": {
+        "usertype": {
+          "usertype": "Men"
+        },
+        "category": "Tshirts"
+      },
+      "brand": "H&amp;M"
+    },
+    {
+      "price": "Rs. 799",
+      "name": "Soft Stretch Jeans",
+      "id": 33,
+      "category": {
+        "usertype": {
+          "usertype": "Men"
+        },
+        "category": "Jeans"
+      },
+      "brand": "Polo"
+    },
+    {
+      "price": "Rs. 1200",
+      "name": "Regular Fit Straight Jeans",
+      "id": 35,
+      "category": {
+        "usertype": {
+          "usertype": "Men"
+        },
+        "category": "Jeans"
+      },
+      "brand": "H&amp;M"
+    },
+    {
+      "price": "Rs. 1400",
+      "name": "Grunt Blue Slim Fit Jeans",
+      "id": 37,
+      "category": {
+        "usertype": {
+          "usertype": "Men"
+        },
+        "category": "Jeans"
+      },
+      "brand": "Polo"
+    },
+    {
+      "price": "Rs. 2300",
+      "name": "Rose Pink Embroidered Maxi Dress",
+      "id": 38,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Dress"
+      },
+      "brand": "Madame"
+    },
+    {
+      "price": "Rs. 3000",
+      "name": "Cotton Silk Hand Block Print Saree",
+      "id": 39,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Saree"
+      },
+      "brand": "Biba"
+    },
+    {
+      "price": "Rs. 3500",
+      "name": "Rust Red Linen Saree",
+      "id": 40,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Saree"
+      },
+      "brand": "Biba"
+    },
+    {
+      "price": "Rs. 5000",
+      "name": "Beautiful Peacock Blue Cotton Linen Saree",
+      "id": 41,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Saree"
+      },
+      "brand": "Madame"
+    },
+    {
+      "price": "Rs. 1400",
+      "name": "Lace Top For Women",
+      "id": 42,
+      "category": {
+        "usertype": {
+          "usertype": "Women"
+        },
+        "category": "Tops"
+      },
+      "brand": "Mast &amp; Harbour"
+    },
+    {
+      "price": "Rs. 1389",
+      "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE",
+      "id": 43,
+      "category": {
+        "usertype": {
+          "usertype": "Men"
+        },
+        "category": "Tshirts"
+      },
+      "brand": "Mast &amp; Harbour"
+    }
+  ]
+}</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

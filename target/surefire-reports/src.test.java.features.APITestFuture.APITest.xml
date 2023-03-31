@@ -1,0 +1,9 @@
+<testsuite failures="0" name="src/test/java/features/APITestFuture/APITest.feature" skipped="0" tests="1" time="2.121822">
+  <testcase classname="src.test.java.features.APITestFuture.APITest" name="API GET" time="2.121822">
+    <system-out>* url 'https://automationexercise.com/api' ................................ passed
+Given path '/productsList' ................................................ passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And karate.log(response) .................................................. passed</system-out>
+  </testcase>
+</testsuite>
