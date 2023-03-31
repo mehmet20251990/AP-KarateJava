@@ -1,0 +1,6 @@
+<testsuite failures="0" name="src/test/java/features/TC01.feature" skipped="0" tests="1" time="13.281503">
+  <testcase classname="src.test.java.features.TC01" name="TC01" time="13.281503">
+    <system-out>* configure driver = {type: 'chrome' , addOptions: ["--remote-allow-origins=*"]} . passed
+Given driver 'http://www.automationexercise.com' .......................... passed</system-out>
+  </testcase>
+</testsuite>

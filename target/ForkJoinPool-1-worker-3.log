@@ -1,0 +1,2 @@
+22:01:03.459 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+21:58:10.582 driver config / start failed: io.netty.karate.handler.codec.http.websocketx.WebSocketHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, target=null}
