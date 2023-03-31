@@ -35,9 +35,9 @@
           
                     <div class="nav-count">
                                     
-                        <div class="bg-success" id="nav-pass">1</div>
+                        <div class="bg-success" id="nav-pass">0</div>
                                     
-                        <div class="bg-danger" id="nav-fail">0</div>
+                        <div class="bg-danger" id="nav-fail">1</div>
                                   
                     </div>
                             
@@ -46,11 +46,11 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2023-03-31 10:01:17 &Ouml;S</div>
+                <div id="nav-date">2023-03-31 11:27:18 &Ouml;S</div>
                         
       
                 <div class="nav-container">
-                    <div class="nav-item passed">
+                    <div class="nav-item failed">
                         <a href="#[1:2]">[1:2] TC01 </a>
                     </div>
                 </div>
@@ -67,23 +67,109 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario: [1:2]</span><span class="scenario-name">TC01 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 13282</div>
+                        <div class="scenario-time failed">ms: 21305</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="1">
                             <div class="step-ref passed">1</div>
-                            <div class="step-cell passed">* configure driver = {type: 'chrome' , addOptions: ["--remote-allow-origins=*"]}</div>
+                            <div class="step-cell passed">* configure driver = { type: 'chrome', executable: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', addOptions: ["--remote-allow-origins=*"] }</div>
                         </div>
-                        <div class="time-cell passed">226</div>
+                        <div class="time-cell passed">97</div>
                     </div>
-                    <div class="preformatted" data-parent="1">22:01:03.459 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="preformatted" data-parent="1">23:26:56.256 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
                     <div class="step-row">
                         <div class="step-container" id="2">
                             <div class="step-ref passed">2</div>
                             <div class="step-cell passed">Given driver 'http://www.automationexercise.com'</div>
                         </div>
-                        <div class="time-cell passed">13055</div>
+                        <div class="time-cell passed">11142</div>
                     </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">* driver.maximize()</div>
+                        </div>
+                        <div class="time-cell passed">245</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">* def homeText = text("//i[@class='fa fa-home']")</div>
+                        </div>
+                        <div class="time-cell passed">868</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">* def title = driver.title</div>
+                        </div>
+                        <div class="time-cell passed">109</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">And match title == 'Automation Exercise'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">And assert title == 'Automation Exercise'</div>
+                        </div>
+                        <div class="time-cell passed">18</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">* click("//a[normalize-space()='Signup / Login']")</div>
+                        </div>
+                        <div class="time-cell passed">236</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">* def NewLogin = text("//*[.='Login to your account']")</div>
+                        </div>
+                        <div class="time-cell passed">5123</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">Then match NewLogin == 'Login to your account'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># wait metodu -&gt;  * delay(3000)</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">* def bytes = screenshot(false)</div>
+                        </div>
+                        <div class="time-cell passed">287</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">* def file = karate.write(bytes, 'test.png')</div>
+                        </div>
+                        <div class="time-cell passed">80</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref failed">13</div>
+                            <div class="step-cell failed">Then input("(//input[@name='email'])[1]","Rooney")</div>
+                        </div>
+                        <div class="time-cell failed">3089</div>
+                    </div>
+                    <div class="preformatted" data-parent="13">TC01.feature:16 - evaluation (js) failed: input("(//input[@name='email'])[1]","Rooney"), java.lang.RuntimeException: js eval failed twice:var e = (//input[@name='email'])[1]; e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}, error: {"type":"object","subtype":"error","className":"SyntaxError","description":"SyntaxError: Unexpected end of input","objectId":"-5554568733612048014.2.5"}
+stack trace: com.intuit.karate.driver.DevToolsDriver.eval(DevToolsDriver.java:300)</div>
                 </div>
             </div>
                 

@@ -1,23 +1,27 @@
-23:23:46.818 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-23:23:47.426 request:
-1 > GET https://automationexercise.com/api/brandsList
+23:34:35.520 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:34:36.202 request:
+1 > POST https://petstore.swagger.io/v2/user
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Host: automationexercise.com
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: petstore.swagger.io
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.15)
+{"id":0,"username":"string","firstName":"string","lastName":"string","email":"string","password":"string","phone":"string","userStatus":0}
 
-23:23:48.700 response time in milliseconds: 1270,17
+23:34:37.332 response time in milliseconds: 1124,40
 1 < 200
-1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 7b0b4fede937234e-IST
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
 1 < Connection: keep-alive
-1 < Content-Type: text/html; charset=utf-8
-1 < Date: Fri, 31 Mar 2023 20:23:48 GMT
-1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=PyGz1ShN8z%2BErdfDm5Q%2F1%2FPhhOcP42gJMPfx0TJ1bLCo4B7twXCMdBoYRwNrRJ0T2PlJ5W4yrDtSR3FvpHBsdRHrjRwG4yKvzInkgIjZZ0EggA8rEf4cRVfXxDrLbMRNULarREjCQu4k"}],"group":"cf-nel","max_age":604800}
-1 < Server: cloudflare
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Mar 2023 20:34:37 GMT
+1 < Server: Jetty(9.2.9.v20150224)
 1 < Transfer-Encoding: chunked
-1 < allow: POST, DELETE, OPTIONS, GET, PUT
+{"code":200,"type":"unknown","message":"9223372036854771991"}
+
+, GET, PUT
 1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 1 < referrer-policy: same-origin
 1 < status: 200 OK

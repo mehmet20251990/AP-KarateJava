@@ -1,0 +1,16 @@
+<testsuite failures="1" name="src/test/java/features/petstore.feature" skipped="0" tests="1" time="1.815755">
+  <testcase classname="src.test.java.features.petstore" name="POST" time="1.815755">
+    <failure message="petstore.feature:23 - evaluation (js) failed: And, javax.script.ScriptException: ReferenceError: &quot;And&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)">* url 'https://petstore.swagger.io/v2' .................................... passed
+* def rB = ................................................................ passed
+Given path '/user' ........................................................ passed
+And request rB ............................................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match And match $.message == "9223372036854771849" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: petstore.feature:23 - evaluation (js) failed: And, javax.script.ScriptException: ReferenceError: "And" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)&#13;
+	at ✽.And match And match $.message == "9223372036854771849" (petstore.feature:23)</failure>
+  </testcase>
+</testsuite>

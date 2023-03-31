@@ -1,6 +1,22 @@
-<testsuite failures="0" name="src/test/java/features/TC01.feature" skipped="0" tests="1" time="13.281503">
-  <testcase classname="src.test.java.features.TC01" name="TC01" time="13.281503">
-    <system-out>* configure driver = {type: 'chrome' , addOptions: ["--remote-allow-origins=*"]} . passed
-Given driver 'http://www.automationexercise.com' .......................... passed</system-out>
+<testsuite failures="1" name="src/test/java/features/TC01.feature" skipped="0" tests="1" time="21.304543">
+  <testcase classname="src.test.java.features.TC01" name="TC01" time="21.304543">
+    <failure message="TC01.feature:16 - evaluation (js) failed: input(&quot;(//input[@name='email'])[1]&quot;,&quot;Rooney&quot;), java.lang.RuntimeException: js eval failed twice:var e = (//input[@name='email'])[1]; e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}, error: {&quot;type&quot;:&quot;object&quot;,&quot;subtype&quot;:&quot;error&quot;,&quot;className&quot;:&quot;SyntaxError&quot;,&quot;description&quot;:&quot;SyntaxError: Unexpected end of input&quot;,&quot;objectId&quot;:&quot;-5554568733612048014.2.5&quot;}&#10;stack trace: com.intuit.karate.driver.DevToolsDriver.eval(DevToolsDriver.java:300)">* configure driver = { type: 'chrome', executable: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', addOptions: ["--remote-allow-origins=*"] } . passed
+Given driver 'http://www.automationexercise.com' .......................... passed
+* driver.maximize() ....................................................... passed
+* def homeText = text("//i[@class='fa fa-home']") ......................... passed
+* def title = driver.title ................................................ passed
+And match title == 'Automation Exercise' .................................. passed
+And assert title == 'Automation Exercise' ................................. passed
+* click("//a[normalize-space()='Signup / Login']") ........................ passed
+* def NewLogin = text("//*[.='Login to your account']") ................... passed
+Then match NewLogin == 'Login to your account' ............................ passed
+* def bytes = screenshot(false) ........................................... passed
+* def file = karate.write(bytes, 'test.png') .............................. passed
+Then input("(//input[@name='email'])[1]","Rooney") ........................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: TC01.feature:16 - evaluation (js) failed: input("(//input[@name='email'])[1]","Rooney"), java.lang.RuntimeException: js eval failed twice:var e = (//input[@name='email'])[1]; e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}, error: {"type":"object","subtype":"error","className":"SyntaxError","description":"SyntaxError: Unexpected end of input","objectId":"-5554568733612048014.2.5"}
+stack trace: com.intuit.karate.driver.DevToolsDriver.eval(DevToolsDriver.java:300)&#13;
+	at ✽.Then input("(//input[@name='email'])[1]","Rooney") (TC01.feature:16)</failure>
   </testcase>
 </testsuite>
